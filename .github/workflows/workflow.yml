@@ -23,3 +23,8 @@ jobs:
         run: |
           pip install flake8
           flake8 service tests
+
+      - name: Run unit tests with nose
+        run: |
+          pip install nose
+          nosetests --with-spec --spec-color
